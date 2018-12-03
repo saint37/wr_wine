@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'Banner',
+  name: 'Marquisat',
   data () {
     return {
       back1: require("../assets/Marquisat/back1.png"),
@@ -74,15 +74,6 @@ export default {
         setTimeout(function(){
             _self.show1 = true;    
         },1000);
-        setTimeout(function(){
-            _self.show2 = true;    
-        },1500);
-        setTimeout(function(){
-            _self.show3 = true;    
-        },2000);
-        setTimeout(function(){
-            _self.show4 = true;    
-        },2500);
     }
   },
   mounted() {

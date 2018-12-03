@@ -1,6 +1,6 @@
 <template>
   <div class="myfooter">
-    <img :src="logo">
+    <router-link  to="/"><img :src="logo"></router-link>
   </div>
 </template>
 
