@@ -25,10 +25,10 @@
         </div> 
         <div class="intro">
             <div class="t1">
-                MARQUISAT<br>LA PEROUSE
+                PAR LE CHATEAU<br>LAMOTHE-BERGERON
             </div>
             <div class="t2">
-                侯爵园珍藏 <span>|布莱伊产区</span>
+                诺威珍藏 <span>|&ensp;上梅多克产区</span>
             </div>
             <div class="content">
                 <p align="justify">{{para1}}</p>
@@ -36,6 +36,35 @@
             <img :src="bottle" class="bottle"> 
             <img :src="map" class="map"> 
         </div>  
+        <div class="note">
+            <img :src="back3"> 
+            <div class="head">品酒 /<br/> 笔记</div>
+            <div class="notec">
+                <h5>酒体</h5>
+                <p>亮丽的紫红色酒裙反射出宝石般的光芒。</p>
+                <div class="line"></div>
+                <h5>嗅觉</h5>
+                <p>香气复杂，突出表现为成熟的水果香气，香调有覆盆子，黑樱桃，桑椹和蓝莓。尾调有惹人爱的巧克力香气。</p>
+                <div class="line"></div>
+                <h5>口感</h5>
+                <p>入口圆润，单宁清爽，浓郁的果香味随后绽放，随着口腔温度的上升，香草，木质香气更加凸显，余味优雅且持久。</p>
+            </div>
+        </div>
+        <div class="foodinfo">
+            美&emsp;|&emsp;食&emsp;|&emsp;搭&emsp;|&emsp;配
+        </div>
+        <div class="food">
+            <img :src="food1" class="foodimg"> 
+            <img :src="food2" class="foodimg" style="left: 50%;"> 
+            <div class="wrap">
+                <img :src="divider" class="dividerimg"> 
+                <div class="foodc">黑椒牛柳</div>                
+            </div>
+            <div class="wrap">
+                <img :src="divider" class="dividerimg"> 
+                <div class="foodc">法式奶酪</div>
+            </div>
+        </div>
   </div>
 </template>
 
@@ -52,6 +81,10 @@ export default {
       divider: require("../assets/Marquisat/divider.png"),
       map: require("../assets/Nove/map.png"),
       bottle: require("../assets/Nove/bottle.png"),
+      back3: require("../assets/Nove/back3.png"),
+      para1: '诺威是拉莫宝爵龙酒庄最后一个诞生的珍藏酒款。作为19世界最主要的超级中级庄之一并持续至今，从始至今，拉莫宝爵龙酒庄都是上梅多克产区的代表。作为负有盛名的农学家杰克·德·宝爵龙坚持酒庄以他名字的一部分命名。从1796年开始，这个古老的议会通过革命终于回归葡园，并致力于各项葡园文化的探索和试验。依偎在玛歌村和圣·朱利安的土地旁，作为独有的沿河酒庄，拥有基隆大区最优质的砾石土壤。这片神奇的土地能够拥有完美的排水系统赋予葡萄平衡的酸度……这款佳酿由一级庄金钟酒庄赫赫有名的酿酒师Hubert de BOÜARD酿造。',
+      food1: require("../assets/Nove/food1.png"),
+      food2: require("../assets/Nove/food2.png"),
     }
   },
   methods: {
@@ -86,6 +119,9 @@ export default {
     background: #191a1b;
     text-align:center;
 }
+.backimg img{
+    width: 100%;
+}
 .icon img{
     margin: 50px;
     width: 180px; 
@@ -96,23 +132,24 @@ export default {
     text-align:center; 
     position: relative;
     padding: 50px;
-    color: #fff;
+    color: #eee;
 }
 .divider .dividerback{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 .divider .text{
-    font-size: 18px;
+    font-size: 22px;
     font-family: "STKaiti";
     position: absolute;
-    width: 200px;
+    width: 240px;
     top: 188px;
-    left: calc(50% - 101px);
+    left: calc(50% - 120px);
 }
 .divider .textsm{
-    padding-top: 20px;
+    padding-top: 30px;
     letter-spacing: 20px;
     position: absolute;
     top: 220px;
@@ -120,29 +157,30 @@ export default {
     width: 500px;
 }
 .divider .dividerimg{
-    width: 200px;
+    width: 240px;
     position: absolute;
-    top: 180px;
-    left: calc(50% - 100px);
+    top: 178px;
+    left: calc(50% - 120px);
 }
 .intro{
     background: #000;
     position: relative;
     min-height: 600px;
-    color: #fff;
+    color: #eee;
     padding: 100px;
+    font-size: 14px;
 }
 .intro .bottle{
     position: absolute;
-    width: 350px;
+    width: 450px;
     right: 100px;
     top: 50px;
 }
 .intro .map{
     position: absolute;
-    width: 200px;
-    right: 300px;
-    top: 300px;
+    width: 250px;
+    right: 400px;
+    top: 250px;
 }
 .intro .t1{
     color: #7e071c;
@@ -155,9 +193,9 @@ export default {
     font-family: "STKaiti";
 }
 .intro .t2 span{
-    color: #fff;
+    color: #eee;
     font-size: 16px;
-    font-family: "STHeiti";
+    font-family: "STKaiti";
 }
 .intro .content{
     width: 500px;
@@ -165,5 +203,80 @@ export default {
 }
 .intro .content p{
     margin-top: 10px;
+    line-height: 28px;
+}
+.note{
+    background: #191a1b;
+    position: relative;
+    min-height: 610px;
+    padding: 100px;
+    overflow: hidden;
+}
+.note img{
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+.note .head{
+    position: absolute;
+    color: #800319;
+    font-size: 26px;
+}
+.note .notec{
+    position: absolute;
+    top: 220px;
+    color: #eee;
+    font-size: 14px;
+    width: 480px;
+}
+.note .notec h5{
+    font-weight: bold;
+    font-size: 16px;
+}
+.note .notec .line{
+    width: 50px;
+    height: 2px;
+    background: #800319;
+    margin: 20px 0;
+}
+.foodinfo{
+    background: #191a1b;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    color: #ddd;
+}
+.food{
+    background: #191a1b;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.food .foodimg{
+    width: 50%;
+    position: absolute;
+}
+.food .wrap{
+    float:left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.food .wrap:hover{
+    background: rgba(0, 0, 0, 0);
+}
+.food .wrap .foodc{
+    color: #eee;
+    font-size: 24px;
+    margin-top: -64px;
+}
+.food .wrap .dividerimg{
+    margin-top: 150px;
+    width: 300px;
+    height: 80px;
 }
 </style>

@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Banner from '@/components/banner'
-import Advantage from '@/components/advantage'
+import Banner from '@/common/banner'
+import Advantage from '@/common/advantage'
 export default {
   name: 'index',
   components:{
@@ -34,7 +34,7 @@ export default {
         {img:require("../assets/index/03.png"),data:"诺威，Nove",url:"Nove"},
         {img:require("../assets/index/04.png"),data:"榆树庄园，Saint-julien",url:"Julien"},
         {img:require("../assets/index/05.png"),data:"侯爵园，Marquisat",url:"Marquisat"},
-        {img:require("../assets/index/06.png"),data:"卡玛萨克，Carmasac",url:"Carmasac"},
+        {img:require("../assets/index/06.png"),data:"卡玛萨克，Carmasac",url:"Camarsac"},
         {img:require("../assets/index/07.png"),data:"苏比洛，Subilaux",url:"Subilaux"}
       ]
     }

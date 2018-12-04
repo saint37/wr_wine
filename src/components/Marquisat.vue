@@ -22,7 +22,7 @@
                 MARQUISAT<br>LA PEROUSE
             </div>
             <div class="t2">
-                侯爵园珍藏 <span>|布莱伊产区</span>
+                侯爵园珍藏 <span>|&ensp;布莱伊产区</span>
             </div>
             <div class="content">
                 <p align="justify">{{para1}}</p>
@@ -100,6 +100,9 @@ export default {
     background: #191a1b;
     text-align:center;
 }
+.backimg img{
+    width: 100%;
+}
 .icon img{
     margin: 50px;
     width: 100px; 
@@ -134,44 +137,48 @@ export default {
     font-family: "STKaiti";
 }
 .intro .t2 span{
-    color: #fff;
+    color: #eee;
     font-size: 16px;
-    font-family: "STHeiti";
+    font-family: "STKaiti";
 }
 .intro .content{
     width: 500px;
     margin-top: 20px;
+    color: #eee;
 }
 .intro .content p{
     margin-top: 10px;
+    line-height: 20px;
 }
 .divider{
-    height: 150px;
     background: #191a1b;
     text-align:center; 
     position: relative;
-    padding: 50px;
-    color: #fff;
+    padding: 60px;
+    color: #eee;
 }
 .divider .text{
-    font-size: 16px;
+    font-size: 20px;
     font-family: "STKaiti";
 }
 .divider .textsm{
-    padding-top: 20px;
+    padding-top: 30px;
     letter-spacing: 20px;
 }
 .divider img{
-    width: 200px;
+    width: 240px;
     position: absolute;
-    top: 40px;
-    left: calc(50% - 100px);
+    top: 50px;
+    left: calc(50% - 120px);
 }
 .poem {
     position: relative;
     text-align: center;
     color: #ddd;
     background: #191a1b;
+}
+.poem img{
+    width: 100%;
 }
 .poem .content{
     width: 500px;
