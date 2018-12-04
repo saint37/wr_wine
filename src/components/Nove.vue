@@ -254,6 +254,7 @@ export default {
 }
 .food .foodimg{
     width: 50%;
+    height: 100%;
     position: absolute;
 }
 .food .wrap{

@@ -190,6 +190,7 @@ export default {
 }
 .food .foodimg{
     width: 50%;
+    height: 100%;
     position: absolute;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;

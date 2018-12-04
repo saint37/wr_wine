@@ -185,6 +185,9 @@ export default {
 	width: 50%;
 	float: left;	
 }
+.gridimg{
+    height: 100%;
+}
 .grid3 .textsm{
 	letter-spacing: 22px;
 }
